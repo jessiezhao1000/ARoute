@@ -21,5 +21,9 @@
 			</array>
 		</dict>
 	</dict>
+	<key>UILaunchStoryboardName - 2</key>
+	<string>LaunchScreen</string>
+	<key>UIViewControllerBasedStatusBarAppearance</key>
+	<false/>
 </dict>
 </plist>
