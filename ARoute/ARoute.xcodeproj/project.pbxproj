@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6E659D1529D36C6900B929F7 /* Grocery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E659D1429D36C6900B929F7 /* Grocery.swift */; };
+		6E659D1729D36E2400B929F7 /* GroceryListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E659D1629D36E2400B929F7 /* GroceryListViewController.swift */; };
 		FFC7B7D129B7CB0600A85059 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC7B7D029B7CB0600A85059 /* SceneDelegate.swift */; };
 		FFC7B7D329B7CB0600A85059 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC7B7D229B7CB0600A85059 /* ViewController.swift */; };
 		FFC7B7EF29B7CB2000A85059 /* ViewController+ARSessionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC7B7E429B7CB2000A85059 /* ViewController+ARSessionDelegate.swift */; };
@@ -19,6 +21,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6E659D1429D36C6900B929F7 /* Grocery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Grocery.swift; sourceTree = "<group>"; };
+		6E659D1629D36E2400B929F7 /* GroceryListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroceryListViewController.swift; sourceTree = "<group>"; };
 		FFC7B7CB29B7CB0600A85059 /* ARoute.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ARoute.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFC7B7D029B7CB0600A85059 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		FFC7B7D229B7CB0600A85059 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -43,6 +47,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6E659D1329D36C2A00B929F7 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				6E659D1429D36C6900B929F7 /* Grocery.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		FFC7B7C229B7CB0600A85059 = {
 			isa = PBXGroup;
 			children = (
@@ -65,7 +77,9 @@
 		FFC7B7CD29B7CB0600A85059 /* ARoute */ = {
 			isa = PBXGroup;
 			children = (
+				6E659D1329D36C2A00B929F7 /* Models */,
 				FFDEC93529B7CEDF00B2759B /* Assets.xcassets */,
+				6E659D1629D36E2400B929F7 /* GroceryListViewController.swift */,
 				FFC7B7EA29B7CB2000A85059 /* StatusViewController.swift */,
 				FFC7B7ED29B7CB2000A85059 /* AppDelegate.swift */,
 				FFC7B7E429B7CB2000A85059 /* ViewController+ARSessionDelegate.swift */,
@@ -157,6 +171,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				FFC7B7D329B7CB0600A85059 /* ViewController.swift in Sources */,
+				6E659D1729D36E2400B929F7 /* GroceryListViewController.swift in Sources */,
+				6E659D1529D36C6900B929F7 /* Grocery.swift in Sources */,
 				FFC7B7EF29B7CB2000A85059 /* ViewController+ARSessionDelegate.swift in Sources */,
 				FFC7B7F529B7CB2000A85059 /* AppDelegate.swift in Sources */,
 				FFC7B7F329B7CB2000A85059 /* StatusViewController.swift in Sources */,
@@ -288,7 +304,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 9BL45XFPWL;
+				DEVELOPMENT_TEAM = RW29LZSC8X;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ARoute/Info.plist;
 				INFOPLIST_KEY_NSCameraUsageDescription = "The camera is used for augmenting reality";
@@ -320,7 +336,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 9BL45XFPWL;
+				DEVELOPMENT_TEAM = RW29LZSC8X;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ARoute/Info.plist;
 				INFOPLIST_KEY_NSCameraUsageDescription = "The camera is used for augmenting reality";
