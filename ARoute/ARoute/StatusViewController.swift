@@ -26,6 +26,8 @@ class StatusViewController: UIViewController {
     @IBOutlet weak private var messageLabel: UILabel!
     
     @IBOutlet weak private var restartExperienceButton: UIButton!
+    
+    
 
     // MARK: - Properties
     
@@ -77,6 +79,23 @@ class StatusViewController: UIViewController {
     func cancelAllScheduledMessages() {
         for messageType in MessageType.all {
             cancelScheduledMessage(for: messageType)
+        }
+    }
+    
+    // MARK: - PicInfo Handling
+    func showPicInfo(_ image: UIImage, autoHide: Bool = true) {
+        // Cancel any previous hide timer.
+        messageHideTimer?.invalidate()
+
+//        messageLabel.text = text
+
+        // Make sure status is showing.
+        setMessageHidden(false, animated: true)
+
+        if autoHide {
+            messageHideTimer = Timer.scheduledTimer(withTimeInterval: displayDuration, repeats: false, block: { [weak self] _ in
+                self?.setMessageHidden(true, animated: true)
+            })
         }
     }
     
