@@ -38,7 +38,7 @@ class MenuController: UIViewController, UISearchResultsUpdating, UISearchBarDele
         guard let text = searchController.searchBar.text else{
             return
         }
-        let vc = searchController.searchResultsController as? ResultsVC
+//        let vc = searchController.searchResultsController as? ResultsVC
 //        vc?.view.backgroundColor = .yellow
         print(text)
     }
