@@ -9,6 +9,10 @@
 import ARKit
 import SceneKit
 import UIKit
+import SwiftUI
+
+// Define a custom SwiftUI View that you want to show
+
 
 class ViewController: UIViewController, ARSCNViewDelegate {
     
@@ -42,6 +46,9 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         statusViewController.restartExperienceHandler = { [unowned self] in
             self.restartExperience()
         }
+        
+        sceneView.backgroundColor = UIColor.clear
+        
     }
 
     override func viewDidAppear(_ animated: Bool) {
@@ -108,12 +115,19 @@ class ViewController: UIViewController, ARSCNViewDelegate {
             
             // Add the plane visualization to the scene.
             node.addChildNode(planeNode)
+            
         }
 
         DispatchQueue.main.async {
+            //let imageName = referenceImage.name ?? ""
+            //self.statusViewController.cancelAllScheduledMessages()
+            //self.statusViewController.showMessage("Detected image “\(imageName)”")
             let imageName = referenceImage.name ?? ""
-            self.statusViewController.cancelAllScheduledMessages()
-            self.statusViewController.showMessage("Detected image “\(imageName)”")
+            let myCustomView = MyCustomView()
+            let hostingController = UIHostingController(rootView: myCustomView)
+            hostingController.view.backgroundColor = UIColor.clear
+            
+            self.present(hostingController, animated: true)
         }
     }
 
@@ -128,5 +142,4 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         ])
     }
 }
-
 
