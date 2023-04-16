@@ -8,19 +8,22 @@
 import SwiftUI
 
 struct ItemOverView: View {
-    
+    @State var showDetailView = false;
     var body: some View {
         VStack {
             Image("overview")
                 .resizable()
                 .aspectRatio(contentMode: .fit)
+                .onTapGesture {
+                    showDetailView.toggle()
+                }
+            
+            Spacer()
         }
         .background(Color.clear)
-    }
-}
-
-struct ItemOverView_Previews: PreviewProvider {
-    static var previews: some View {
-        ItemOverView()
+        
+        if (showDetailView) {
+            ItemDetailView()
+        }
     }
 }

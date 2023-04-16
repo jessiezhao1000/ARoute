@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		6EA7E82B29EC8B08002C43A6 /* ItemOverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EA7E82A29EC8B08002C43A6 /* ItemOverView.swift */; };
+		6EA7E82D29EC8EBD002C43A6 /* ItemDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EA7E82C29EC8EBD002C43A6 /* ItemDetailView.swift */; };
 		FF2DFC7F29C2694A00B60F5F /* MenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF2DFC7E29C2694A00B60F5F /* MenuController.swift */; };
 		FFC7B7D129B7CB0600A85059 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC7B7D029B7CB0600A85059 /* SceneDelegate.swift */; };
 		FFC7B7D329B7CB0600A85059 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC7B7D229B7CB0600A85059 /* ViewController.swift */; };
@@ -22,6 +23,7 @@
 
 /* Begin PBXFileReference section */
 		6EA7E82A29EC8B08002C43A6 /* ItemOverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemOverView.swift; sourceTree = "<group>"; };
+		6EA7E82C29EC8EBD002C43A6 /* ItemDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDetailView.swift; sourceTree = "<group>"; };
 		FF2DFC7E29C2694A00B60F5F /* MenuController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuController.swift; sourceTree = "<group>"; };
 		FFC7B7CB29B7CB0600A85059 /* ARoute.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ARoute.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFC7B7D029B7CB0600A85059 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -76,8 +78,9 @@
 				FFC7B7E429B7CB2000A85059 /* ViewController+ARSessionDelegate.swift */,
 				FFC7B7D029B7CB0600A85059 /* SceneDelegate.swift */,
 				FFC7B7D229B7CB0600A85059 /* ViewController.swift */,
-				FFC7B7DC29B7CB0800A85059 /* Info.plist */,
 				6EA7E82A29EC8B08002C43A6 /* ItemOverView.swift */,
+				FFC7B7DC29B7CB0800A85059 /* Info.plist */,
+				6EA7E82C29EC8EBD002C43A6 /* ItemDetailView.swift */,
 			);
 			path = ARoute;
 			sourceTree = "<group>";
@@ -166,6 +169,7 @@
 				FFC7B7EF29B7CB2000A85059 /* ViewController+ARSessionDelegate.swift in Sources */,
 				FFC7B7F529B7CB2000A85059 /* AppDelegate.swift in Sources */,
 				FFC7B7F329B7CB2000A85059 /* StatusViewController.swift in Sources */,
+				6EA7E82D29EC8EBD002C43A6 /* ItemDetailView.swift in Sources */,
 				6EA7E82B29EC8B08002C43A6 /* ItemOverView.swift in Sources */,
 				FF2DFC7F29C2694A00B60F5F /* MenuController.swift in Sources */,
 				FFC7B7D129B7CB0600A85059 /* SceneDelegate.swift in Sources */,

@@ -123,10 +123,18 @@ class ViewController: UIViewController, ARSCNViewDelegate {
             //self.statusViewController.cancelAllScheduledMessages()
             //self.statusViewController.showMessage("Detected image “\(imageName)”")
             let imageName = referenceImage.name ?? ""
-            let myCustomView = MyCustomView()
-            let hostingController = UIHostingController(rootView: myCustomView)
+            let overView = ItemOverView()
+            
+            let hostingController = UIHostingController(rootView: ZStack{overView}.edgesIgnoringSafeArea(.all))
             hostingController.view.backgroundColor = UIColor.clear
             
+            hostingController.view.frame = self.view.bounds
+            hostingController.view.autoresizingMask = [.flexibleWidth, .flexibleHeight]
+            //self.sceneView.addSubview(hostingController.view)
+
+                // Enable interaction with the SwiftUI view
+              //  self.addChild(hostingController)
+                //hostingController.didMove(toParent: self)
             self.present(hostingController, animated: true)
         }
     }
